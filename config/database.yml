@@ -14,4 +14,4 @@ production:
   pool: 5
   host: localhost
   username: jstech
-  password: 
+  password: petitponey
