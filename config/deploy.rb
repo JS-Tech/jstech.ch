@@ -1,9 +1,9 @@
 # config valid only for current version of Capistrano
-lock '3.3.5'
+#lock '3.3.5'
 
 set :application, 'jstech.ch'
 set :repo_url, 'git@github.com:JS-Tech/jstech.ch.git'
-set :user,            'deployer'
+set :user,            'jstech'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
