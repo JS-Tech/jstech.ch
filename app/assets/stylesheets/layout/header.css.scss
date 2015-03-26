@@ -1,0 +1,24 @@
+#logo-wraper {
+	img {
+		float: left;
+		width: 64px;
+		margin: 10px;
+	}
+}
+
+#header {
+
+	text-align: center;
+	ul {
+		li {
+			display: inline-block;
+			padding: 0 5px;
+			&, a {
+				color: #ddd;
+				font-family: "Courier New";
+				font-size: 15px;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+<% content_for :id, "resources" %>
+
+<h2>Resources</h2>
+
+<% @resources.each do |resource| %>
+<ul>
+	<li>
+		<span class="title"><%= link_to resource.title, resource.url %></span>
+		<span class="desc"><%= resource.description %></span>
+	</li>
+</ul>
+<% end %>

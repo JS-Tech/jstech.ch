@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  resources :pages
+  resources :resources do
+
+  end
+  resources :pages do
+    collection do
+      get 'loops', to: 'pages#loops' 
+    end
+  end
   root 'pages#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
