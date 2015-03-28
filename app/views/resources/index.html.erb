@@ -2,11 +2,11 @@
 
 <h2>Resources</h2>
 
-<% @resources.each do |resource| %>
 <ul>
+	<% @resources.each do |resource| %>
 	<li>
 		<span class="title"><%= link_to resource.title, resource.url %></span>
 		<span class="desc"><%= resource.description %></span>
 	</li>
+	<% end %>
 </ul>
-<% end %>

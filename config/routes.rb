@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :containers
   resources :resources do
     collection do
       get 'loops', to: 'pages#loops' 
@@ -7,7 +8,9 @@ Rails.application.routes.draw do
   resources :pages do
   end
   root 'pages#index'
-
+  namespace :nkcr do
+    resources :containers, path: "c"
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
