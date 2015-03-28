@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   resources :resources do
-
-  end
-  resources :pages do
     collection do
       get 'loops', to: 'pages#loops' 
     end
+  end
+  resources :pages do
   end
   root 'pages#index'
 
