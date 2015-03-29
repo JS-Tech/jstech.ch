@@ -18,6 +18,6 @@ ActiveAdmin.register Container do
     defaults finder: :find_by_guid
   end
 
-  permit_params :title, :content, :container_type
+  permit_params :title, :content, :container_type, :guid
 
 end
