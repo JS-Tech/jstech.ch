@@ -7,6 +7,9 @@ class PagesController < ApplicationController
 	def loops
 	end
 
+	def khcr
+	end
+
 	def nkcr
 	end
 
