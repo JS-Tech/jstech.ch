@@ -2,6 +2,6 @@
 
 <h2><%= @container.title %></h2>
 
-<p><%= @container.content %></p>
+<p class="type"><%= @container.container_type.title %> : <%= image_tag @container.container_type.image %></p>
 
-<p><%= image_tag "nkcr/containers/rako.jpg" %></p>
+<p><%= simple_format @container.content %></p>

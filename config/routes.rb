@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :container_types
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :containers
   resources :resources do
     collection do
@@ -8,6 +11,7 @@ Rails.application.routes.draw do
   resources :pages do
   end
   root 'pages#index'
+  get 'nkcr', to: 'pages#nkcr'
   namespace :nkcr do
     resources :containers, path: "c"
   end

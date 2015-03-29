@@ -2,8 +2,14 @@
 
 <h2>Containers</h2>
 
+<p><%= image_tag "nkcr/containers/index.jpg" %></p>
+
 <ul>
 	<% @containers.each do |c| %>
-	<li><%= link_to c.title, nkcr_container_path(c) %></li>
+	<li>
+		<%= link_to c.guid, nkcr_container_path(c) %>
+		<span class="desc"><%= c.title %></span>
+		<span class="type">(<%= c.container_type.title %>)</span>
+	</li>
 	<% end %>
 </ul>

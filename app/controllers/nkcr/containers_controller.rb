@@ -1,4 +1,4 @@
-class Nkcr::ContainersController < Nkcr::ApplicationController
+class Nkcr::ContainersController < ApplicationController
 	def index
 		@containers = Container.all
 	end
