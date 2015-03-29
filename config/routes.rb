@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   end
   root 'pages#index'
   get 'nkcr', to: 'pages#nkcr'
+  get 'team', to: 'pages#team'
   namespace :nkcr do
     resources :containers, path: "c"
   end

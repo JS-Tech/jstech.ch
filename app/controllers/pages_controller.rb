@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 	def nkcr
 	end
 
+	def team
+	end
+
 end
