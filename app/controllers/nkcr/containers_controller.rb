@@ -3,6 +3,6 @@ class Nkcr::ContainersController < ApplicationController
 		@containers = Container.all
 	end
 	def show
-		@container = Container.find_by_guid(params[:id])
+		@container = Container.find_by_guid(params[:id]).order(:guid)
 	end
 end
