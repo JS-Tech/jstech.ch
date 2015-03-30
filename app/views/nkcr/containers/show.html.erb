@@ -2,7 +2,7 @@
 
 <h2><%= @container.title %></h2>
 
-<p class="type"><%= @container.container_type.title %> : <%= image_tag @container.container_type.image %></p>
+<p class="type"><%= @container.guid %> (<%= @container.container_type.title %>) : <%= image_tag @container.container_type.image %></p>
 
 <div class="items">
 	<p><%= simple_format @container.content %></p>
