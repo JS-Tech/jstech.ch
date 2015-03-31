@@ -1,0 +1,7 @@
+<h2>Thought book</h2>
+
+<ul>
+	<% @blogs.each do |blog| %>
+	<li><%= link_to blog.title, blog_path(blog) %></li>
+	<% end %>
+</ul>

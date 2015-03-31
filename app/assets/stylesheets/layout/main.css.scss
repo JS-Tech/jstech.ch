@@ -32,6 +32,10 @@ p, ul {
 	line-height: 29px;
 }
 
+p:not(:last-child) {
+	padding: 0 0 10px 0;
+}
+
 a:hover {
 	text-decoration: underline;
 }
