@@ -1,6 +1,9 @@
 <% content_for :id, "nkcr-containers-show" %>
 
-<h2><%= @container.title %></h2>
+<h2>
+	<%= link_to '↞', nkcr_containers_path %> 
+	<%= @container.title %>
+</h2>
 
 <p class="type"><%= @container.guid %> (<%= @container.container_type.title %>) : <%= image_tag @container.container_type.image %></p>
 
