@@ -4,7 +4,7 @@ role :app, %w{jstech@188.166.35.173}
 role :web, %w{jstech@188.166.35.173}
 role :db,  %w{jstech@188.166.35.173}
 
-ask(:password, nil, echo: false)
+ask(nil, echo: false)
 
 # Define server(s)
 server '188.166.35.173', user: 'jstech', roles: %w{web app db}, primary: true
