@@ -5,6 +5,6 @@
 
 <ul>
 	<% @blogs.each do |blog| %>
-	<li><%= link_to blog.title, blog_path(blog) %></li>
+	<li><%= link_to blog.title, blog_path(blog) %> (<%= blog.updated_at.strftime('%d %b') %>)</li>
 	<% end %>
 </ul>

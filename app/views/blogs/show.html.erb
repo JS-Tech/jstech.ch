@@ -3,4 +3,4 @@
 	<%= @blog.title %>
 </h2>
 
-<%= simple_format @blog.content %>
+<%= simple_markdown(@blog.content) %>

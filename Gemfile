@@ -55,3 +55,5 @@ gem 'puma'
 
 gem 'activeadmin', github: 'activeadmin' # administration
 gem 'devise'
+
+gem 'simple_markdown'#, path: "../simple_markdown"
