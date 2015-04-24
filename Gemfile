@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'simple_markdown'#, path: "../simple_markdown"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -55,5 +56,3 @@ gem 'puma'
 
 gem 'activeadmin', github: 'activeadmin' # administration
 gem 'devise'
-
-gem 'simple_markdown'#, path: "../simple_markdown"

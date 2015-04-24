@@ -1,7 +1,32 @@
 #container.nkcr {
-	img {
+	h2 img {
 		width: 200px;
 		border-radius: 50%;
 		float: right;
+	}
+	.resume {
+		img {
+			float: left;
+			padding: 0 15px 15px 0;
+		}
+	}
+	div.skill {
+		display: flex;
+		align-items: baseline;
+		p.spacer {margin: auto;}
+		ul.chart {
+			display: flex;
+			align-items: flex-end;
+			li {
+				width: 8px;
+				margin: 1px;
+				background: #ddd;
+				&.ok {background: rgb(197, 90, 25);}
+				&.a1 {height:20px;}
+				&.a2 {height:15px;}
+				&.a3 {height:10px;}
+				&.a4 {height:5px;}
+			}
+		}
 	}
 }
