@@ -56,3 +56,5 @@ gem 'puma'
 
 gem 'activeadmin', github: 'activeadmin' # administration
 gem 'devise'
+
+gem 'execjs'
