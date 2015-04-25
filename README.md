@@ -3,5 +3,6 @@ Thanks to https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-an
 Server dependencie :
 
 ```
-sudo apt-get install wkhtmltopdf
+dpkg -i wkhtmltopdf.deb
+sudo apt-get -f install
 ```
