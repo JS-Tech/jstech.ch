@@ -34,7 +34,7 @@ module JstechCh
       g.helper          false
     end
 
-    #config.middleware.use PDFKit::Middleware
+    config.middleware.use PDFKit::Middleware
 
   end
 end
