@@ -11,15 +11,6 @@ class PagesController < ApplicationController
 	end
 
 	def nkcr
-		respond_to do |format|
-      format.html
-      format.pdf do
-        render 	pdf: "file_name",
-								template: "pages/nkcr.html.erb",
-								layout: "pdf",
-								encoding: "utf-8"
-      end
-    end
 	end
 
 	def team

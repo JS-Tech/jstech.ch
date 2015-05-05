@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'pdfkit'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -32,6 +33,8 @@ module JstechCh
       g.javascripts     false
       g.helper          false
     end
+
+    config.middleware.use PDFKit::Middleware
 
   end
 end

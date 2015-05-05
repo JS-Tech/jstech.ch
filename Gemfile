@@ -57,5 +57,4 @@ gem 'puma'
 gem 'activeadmin', github: 'activeadmin' # administration
 gem 'devise'
 
-gem 'wicked_pdf'
-gem 'wkhtmltopdf-binary'
+gem 'pdfkit'
