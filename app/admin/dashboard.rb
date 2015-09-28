@@ -10,6 +10,8 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
+    div "JS-Tech administration"
+
     # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do
