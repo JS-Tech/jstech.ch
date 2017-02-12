@@ -44,7 +44,7 @@ group :development, :test do
 end
 
 # Use Capistrano for deployment
-gem 'capistrano', '~> 3.4.0'
+gem 'capistrano', '~> 3.6'
 
 gem 'capistrano-maintenance', require: false
 
