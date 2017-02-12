@@ -46,7 +46,7 @@ end
 group :development do
   gem 'capistrano', "3.6.1"
 
-  gem 'capistrano-server', git: 'https://github.com/JS-Tech/capistrano-server', tag: 'v0.7'
+  gem 'capistrano-server', git: 'https://github.com/JS-Tech/capistrano-server'
   # rails specific capistrano funcitons
   gem 'capistrano-rails'
   # integrate bundler with capistrano
@@ -57,7 +57,7 @@ end
 
 gem 'puma'
 
-gem 'activeadmin', '~> 1.0.0.pre4'
+gem 'activeadmin'#, '~> 1.0.0.pre4'
 
 gem 'devise'
 
