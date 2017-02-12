@@ -4,6 +4,7 @@ lock '3.4.0'
 set :application, 'jstech.ch'
 set :repo_url, 'git@github.com:JS-Tech/jstech.ch.git'
 set :url, "jstech.ch"
+set :deploy_user, "jstech"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
