@@ -54,6 +54,8 @@ end
 
 gem 'puma'
 
+gem 'capistrano-server', github: 'JS-Tech/capistrano-server'
+
 gem 'activeadmin', github: 'activeadmin' # administration
 gem 'devise'
 
