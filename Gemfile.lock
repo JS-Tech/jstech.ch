@@ -234,7 +234,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin (~> 1.0.0.pre4)
   byebug
-  capistrano (~> 3.6)
+  capistrano
   capistrano-bundler
   capistrano-maintenance
   capistrano-rails
