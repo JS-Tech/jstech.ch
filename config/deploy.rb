@@ -5,7 +5,7 @@ set :application, 'jstech.ch'
 set :repo_url, 'git@github.com:JS-Tech/jstech.ch.git'
 set :url, "jstech.ch"
 set :deploy_user, "jstech"
-set :ssl, true
+# set :ssl, true
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
