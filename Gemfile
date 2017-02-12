@@ -21,8 +21,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -45,18 +44,21 @@ group :development, :test do
 end
 
 group :development do
-    gem 'capistrano',         require: false
-    gem 'capistrano-rvm',     require: false
-    gem 'capistrano-rails',   require: false
-    gem 'capistrano-bundler', require: false
-    gem 'capistrano3-puma',   require: false
+  gem 'capistrano', "3.6.1"
+
+  gem 'capistrano-server', git: 'https://github.com/JS-Tech/capistrano-server', tag: 'v0.7'
+  # rails specific capistrano funcitons
+  gem 'capistrano-rails'
+  # integrate bundler with capistrano
+  gem 'capistrano-bundler'
+  # if you are using RVM
+  gem 'capistrano-rvm'
 end
 
 gem 'puma'
 
-gem 'capistrano-server', github: 'JS-Tech/capistrano-server', tag: 'v0.7'
+gem 'activeadmin', '~> 1.0.0.pre4'
 
-gem 'activeadmin', github: 'activeadmin' # administration
 gem 'devise'
 
 gem 'pdfkit'
