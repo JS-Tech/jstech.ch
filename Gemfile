@@ -43,21 +43,25 @@ group :development, :test do
   gem 'spring'
 end
 
-group :development do
-  gem 'capistrano', "3.6.1"
+# Use Capistrano for deployment
+gem 'capistrano', '~> 3.4.0'
 
-  gem 'capistrano-server', git: 'https://github.com/JS-Tech/capistrano-server'
-  # rails specific capistrano funcitons
-  gem 'capistrano-rails'
-  # integrate bundler with capistrano
-  gem 'capistrano-bundler'
-  # if you are using RVM
-  gem 'capistrano-rvm'
-end
+gem 'capistrano-maintenance', require: false
+
+gem 'capistrano-server', git: 'https://github.com/JS-Tech/capistrano-server'
+
+# rails specific capistrano funcitons
+gem 'capistrano-rails'
+
+# integrate bundler with capistrano
+gem 'capistrano-bundler'
+
+# if you are using RVM
+gem 'capistrano-rvm'
 
 gem 'puma'
 
-gem 'activeadmin'#, '~> 1.0.0.pre4'
+gem 'activeadmin', '~> 1.0.0.pre4'
 
 gem 'devise'
 
