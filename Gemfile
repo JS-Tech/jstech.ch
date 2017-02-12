@@ -54,7 +54,7 @@ end
 
 gem 'puma'
 
-gem 'capistrano-server', github: 'JS-Tech/capistrano-server'
+gem 'capistrano-server', github: 'JS-Tech/capistrano-server', tag: 'v0.7'
 
 gem 'activeadmin', github: 'activeadmin' # administration
 gem 'devise'
