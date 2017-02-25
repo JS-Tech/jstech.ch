@@ -7,6 +7,8 @@ set :url, "jstech.ch"
 set :deploy_user, "jstech"
 set :ssl, true
 
+set :applications, ["jstech.ch", "spha"]
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 

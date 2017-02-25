@@ -52,8 +52,6 @@ set :ssh_options, {
     password: fetch(:password)
 }
 
-set :applications, ["jstech.ch", "spha"]
-
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
